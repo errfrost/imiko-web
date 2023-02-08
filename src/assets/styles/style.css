@@ -295,6 +295,18 @@ body {
   border: 1px solid #E3FD52;
 }
 
+.screen1 {
+  background-image: url("/src/assets/images/Human-Design.svg");
+}
+
+.screen2 {
+  background-image: url("/src/assets/images/PDF-Converter.svg");
+}
+
+.screen3 {
+  background-image: url("/src/assets/images/Fax.svg");
+}
+
 .wrapper__offer {
   display: flex;
   justify-content: flex-start;
