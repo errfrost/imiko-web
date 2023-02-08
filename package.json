@@ -1,0 +1,24 @@
+{
+  "name": "imiko-web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch src/assets/styles/scss/style.scss src/assets/styles/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/errfrost/imiko-web.git"
+  },
+  "author": "Vladimir Kurganov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/errfrost/imiko-web/issues"
+  },
+  "homepage": "https://github.com/errfrost/imiko-web#readme",
+  "dependencies": {
+    "normalize.css": "^8.0.1",
+    "sass": "^1.58.0"
+  }
+}
