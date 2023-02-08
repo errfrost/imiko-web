@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/errfrost/imiko-web#readme",
   "dependencies": {
+    "normalize.css": "^8.0.1",
     "sass": "^1.58.0"
   }
 }
