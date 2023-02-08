@@ -355,7 +355,7 @@ body {
   width: 1040px;
   height: 508px;
   flex-wrap: wrap;
-  padding-top: 63px;
+  margin-top: -36px;
   column-gap: 24px;
 }
 .team__member {
@@ -375,18 +375,48 @@ body {
   padding-top: 27px;
   text-align: center;
 }
+.team__member:hover {
+  background-color: #E3FD52;
+}
+.team__member:hover p {
+  color: #111111;
+}
 
 .member-lower {
   margin-top: 64px;
+}
+
+.member-lower2 {
+  position: relative;
+  top: 24px;
 }
 
 .member-higher {
   margin-top: -40px;
 }
 
-.slider__toolbar {
+.slider-toolbar {
   display: flex;
   justify-content: flex-end;
+  gap: 16px;
+  padding-top: 63px;
+  z-index: 1;
+}
+.slider-toolbar-left {
+  width: 36px;
+  height: 36px;
+  background-image: url("/src/assets/images/arrow-left-disabled.svg");
+}
+.slider-toolbar-left:hover {
+  background-image: url("/src/assets/images/arrow-left-hover.svg");
+}
+.slider-toolbar-right {
+  width: 36px;
+  height: 36px;
+  background-image: url("/src/assets/images/arrow-right.svg");
+}
+.slider-toolbar-right:hover {
+  background-image: url("/src/assets/images/arrow-right-hover.svg");
 }
 
 .member1 {
@@ -451,6 +481,10 @@ body {
 
 .member16 {
   background-image: url("/src/assets/images/sticker16.svg");
+}
+
+.member17 {
+  background-image: url("/src/assets/images/sticker17.svg");
 }
 
 .wrapper__contact {
