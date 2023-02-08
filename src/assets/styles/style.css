@@ -343,7 +343,114 @@ body {
   padding-top: 49px;
 }
 .team__slider {
+  display: flex;
+  flex-direction: column;
   height: 834px;
+  gap: 24px;
+}
+.team__slider-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 1040px;
+  height: 508px;
+  flex-wrap: wrap;
+  padding-top: 63px;
+  column-gap: 24px;
+}
+.team__member {
+  display: flex;
+  justify-content: center;
+  width: 242px;
+  height: 342px;
+  background-color: #111111;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+.team__member__title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 24px;
+  color: #E3FD52;
+  padding-top: 27px;
+  text-align: center;
+}
+
+.member-lower {
+  margin-top: 64px;
+}
+
+.member-higher {
+  margin-top: -40px;
+}
+
+.slider__toolbar {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.member1 {
+  background-image: url("/src/assets/images/sticker1.svg");
+}
+
+.member2 {
+  background-image: url("/src/assets/images/sticker2.svg");
+}
+
+.member3 {
+  background-image: url("/src/assets/images/sticker3.svg");
+}
+
+.member4 {
+  background-image: url("/src/assets/images/sticker4.svg");
+}
+
+.member5 {
+  background-image: url("/src/assets/images/sticker5.svg");
+}
+
+.member6 {
+  background-image: url("/src/assets/images/sticker6.svg");
+}
+
+.member7 {
+  background-image: url("/src/assets/images/sticker7.svg");
+}
+
+.member8 {
+  background-image: url("/src/assets/images/sticker8.svg");
+}
+
+.member9 {
+  background-image: url("/src/assets/images/sticker9.svg");
+}
+
+.member10 {
+  background-image: url("/src/assets/images/sticker10.svg");
+}
+
+.member11 {
+  background-image: url("/src/assets/images/sticker11.svg");
+}
+
+.member12 {
+  background-image: url("/src/assets/images/sticker12.svg");
+}
+
+.member13 {
+  background-image: url("/src/assets/images/sticker13.svg");
+}
+
+.member14 {
+  background-image: url("/src/assets/images/sticker14.svg");
+}
+
+.member15 {
+  background-image: url("/src/assets/images/sticker15.svg");
+}
+
+.member16 {
+  background-image: url("/src/assets/images/sticker16.svg");
 }
 
 .wrapper__contact {
@@ -404,6 +511,7 @@ body {
   height: 480px;
   background-color: #111111;
   margin-top: -120px;
+  background-image: url("/src/assets/images/map.svg");
 }
 .map__title {
   padding-top: 95px;
