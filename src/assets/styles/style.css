@@ -168,7 +168,7 @@ body {
   font-size: 8.4rem;
   font-weight: 700;
   line-height: 79px;
-  letter-spacing: 0em;
+  letter-spacing: 0.3px;
   color: #FFFFFF;
 }
 .way__title-green {
@@ -223,13 +223,76 @@ body {
 
 .wrapper__apps {
   display: flex;
+  flex-direction: column;
   justify-content: flex-start;
   height: 798px;
-  gap: 24px;
+}
+
+.slider__padding {
+  margin-top: 33px;
 }
 
 .apps {
   background: #FFFFFF;
+}
+.apps__slider {
+  display: flex;
+  gap: 24px;
+}
+.apps__slider-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 1040px;
+  height: 508px;
+  flex-wrap: wrap;
+  margin-top: -36px;
+  column-gap: 24px;
+}
+.apps__lower {
+  margin-top: 28px;
+}
+.apps__item {
+  display: flex;
+  flex-direction: column;
+  width: 508px;
+}
+.apps__item__screen {
+  display: flex;
+  width: 508px;
+  height: 286px;
+  background-color: #111111;
+}
+.apps__title {
+  font-family: Gilroy;
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0.1px;
+  text-align: left;
+  padding-top: 24px;
+}
+.apps__text {
+  padding-top: 8px;
+  line-height: 22px;
+}
+.apps__buttons {
+  padding-top: 36px;
+  display: flex;
+  gap: 24px;
+}
+
+.button__apps {
+  width: 162px;
+  background: #FFFFFF;
+  border: 1px solid #111111;
+  z-index: 1;
+}
+
+.button__apps:hover {
+  background: #E3FD52;
+  color: #111111;
+  border: 1px solid #E3FD52;
 }
 
 .wrapper__offer {
@@ -248,7 +311,7 @@ body {
   font-size: 48px;
   font-weight: 700;
   line-height: 48px;
-  letter-spacing: 0.5px;
+  letter-spacing: 0px;
   text-align: left;
 }
 .offer__text {
@@ -331,7 +394,7 @@ body {
   font-size: 4.8rem;
   font-weight: 700;
   line-height: 48px;
-  letter-spacing: 0.5px;
+  letter-spacing: 0px;
   text-align: left;
 }
 .team__text {
@@ -405,15 +468,24 @@ body {
 .slider-toolbar-left {
   width: 36px;
   height: 36px;
+  background-image: url("/src/assets/images/arrow-right.svg");
+  transform: scale(-1, 1);
+}
+.slider-toolbar-left-disabled {
   background-image: url("/src/assets/images/arrow-left-disabled.svg");
 }
 .slider-toolbar-left:hover {
-  background-image: url("/src/assets/images/arrow-left-hover.svg");
+  background-image: url("/src/assets/images/arrow-right-hover.svg");
+  transform: scale(-1, 1);
 }
 .slider-toolbar-right {
   width: 36px;
   height: 36px;
   background-image: url("/src/assets/images/arrow-right.svg");
+}
+.slider-toolbar-right-disabled {
+  background-image: url("/src/assets/images/arrow-left-disabled.svg");
+  transform: scale(-1, 1);
 }
 .slider-toolbar-right:hover {
   background-image: url("/src/assets/images/arrow-right-hover.svg");
