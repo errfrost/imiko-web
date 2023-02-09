@@ -341,11 +341,13 @@ body {
 @media (max-width: 1600px) {
   .slider__padding {
     padding-top: 63px !important;
+    z-index: 1;
   }
 }
 @media (max-width: 631px) {
   .slider__padding {
     padding-top: 22px !important;
+    z-index: -1 !important;
   }
 }
 
