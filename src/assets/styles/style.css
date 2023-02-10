@@ -121,8 +121,12 @@ body {
   line-height: 19px;
 }
 .button__text {
-  font-weight: 600;
+  font-weight: 400;
   padding-left: 20px;
+}
+
+.nowrap {
+  white-space: nowrap;
 }
 
 .wrapper__header {
