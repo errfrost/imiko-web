@@ -1,5 +1,6 @@
 design/
-src/assets/styles/scss/
+temp/
+#src/assets/styles/scss/
 .DS_store
 
 # Logs
