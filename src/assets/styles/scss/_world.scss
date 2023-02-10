@@ -179,7 +179,7 @@
   }
 
   &__map {
-    background-image: url('/src/assets/images/world.svg');
+    background-image: url('../images/world.svg');
     background-size: contain;
     background-repeat: no-repeat;
     @include media-laptop {
