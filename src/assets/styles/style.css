@@ -7,9 +7,14 @@
 }
 @font-face {
   font-family: "Gilroy";
-  src: url("../fonts/Gilroy-Regular.woff2");
+  src: url("../fonts/Gilroy-Regular.woff");
   font-style: normal;
-  font-weight: 400;
+  line-height: 22.4px;
+}
+@font-face {
+  font-family: "Gilroy-Bold";
+  src: url("../fonts/Gilroy-Bold.woff");
+  font-style: normal;
   line-height: 22.4px;
 }
 @font-face {
@@ -195,6 +200,7 @@ body {
   }
 }
 .way__title {
+  font-family: Gilroy-Bold;
   font-weight: 700;
   letter-spacing: 0.3px;
   color: #FFFFFF;
@@ -283,9 +289,8 @@ body {
   }
 }
 .experience__title {
-  font-family: Gilroy;
+  font-family: Gilroy-Bold;
   font-weight: 700;
-  letter-spacing: 0.5px;
   text-align: left;
 }
 @media (max-width: 1600px) {
@@ -430,9 +435,8 @@ body {
   }
 }
 .apps__title {
-  font-family: Gilroy;
+  font-family: Gilroy-Bold;
   font-weight: 700;
-  letter-spacing: 0.1px;
   text-align: left;
   padding-top: 24px;
 }
@@ -468,10 +472,19 @@ body {
 }
 
 .button__apps {
-  width: 152px;
   background: #FFFFFF;
   border: 1px solid #111111;
   z-index: 1;
+}
+@media (max-width: 1600px) {
+  .button__apps {
+    width: 162px;
+  }
+}
+@media (max-width: 631px) {
+  .button__apps {
+    width: 152px;
+  }
 }
 
 .button__apps:hover {
@@ -536,7 +549,7 @@ body {
   background: #FFFFFF;
 }
 .offer__title {
-  font-family: Gilroy;
+  font-family: Gilroy-Bold;
   font-weight: 700;
   letter-spacing: 0px;
   text-align: left;
@@ -638,7 +651,7 @@ body {
   }
 }
 .world__title {
-  font-family: Gilroy;
+  font-family: Gilroy-Bold;
   font-weight: 700;
   text-align: left;
 }
@@ -647,7 +660,6 @@ body {
     width: 508px;
     font-size: 4.8rem;
     line-height: 48px;
-    letter-spacing: 0.5px;
   }
 }
 @media (max-width: 631px) {
@@ -655,7 +667,6 @@ body {
     width: 327px;
     font-size: 3.6rem;
     line-height: 36px;
-    letter-spacing: 0.1px;
   }
 }
 @media (max-width: 1600px) {
@@ -672,6 +683,26 @@ body {
     font-size: 4.8rem;
     line-height: 48px;
     letter-spacing: 0.5px;
+  }
+}
+@media (max-width: 1600px) {
+  .world__title-laptop {
+    display: block;
+  }
+}
+@media (max-width: 631px) {
+  .world__title-laptop {
+    display: none;
+  }
+}
+@media (max-width: 1600px) {
+  .world__title-mobile {
+    display: none;
+  }
+}
+@media (max-width: 631px) {
+  .world__title-mobile {
+    display: block;
   }
 }
 .world__text {
@@ -785,7 +816,7 @@ body {
   }
 }
 .team__title {
-  font-family: Gilroy;
+  font-family: Gilroy-Bold;
   font-weight: 700;
   letter-spacing: 0px;
   text-align: left;
@@ -880,7 +911,6 @@ body {
   background-color: #111111;
   background-repeat: no-repeat;
   background-position: center bottom;
-  background-size: contain;
 }
 @media (max-width: 1600px) {
   .team__member {
@@ -894,7 +924,18 @@ body {
     height: 232px;
   }
 }
+@media (max-width: 1600px) {
+  .team__member {
+    background-size: auto;
+  }
+}
+@media (max-width: 631px) {
+  .team__member {
+    background-size: contain;
+  }
+}
 .team__member__title {
+  font-family: Gilroy-Bold;
   font-weight: 700;
   color: #E3FD52;
   text-align: center;
@@ -1076,7 +1117,7 @@ body {
 }
 .contact__title {
   width: 508px;
-  font-family: Gilroy;
+  font-family: Gilroy-Bold;
   font-size: 4.8rem;
   font-weight: 700;
   line-height: 48px;
@@ -1091,7 +1132,7 @@ body {
   .contact__details {
     width: 508px;
     padding-top: 13px;
-    gap: 37px;
+    gap: 36px;
   }
 }
 @media (max-width: 631px) {
@@ -1179,9 +1220,8 @@ body {
   }
 }
 .map__title {
-  font-family: Gilroy;
+  font-family: Gilroy-Bold;
   font-weight: 700;
-  letter-spacing: 0.5px;
 }
 @media (max-width: 1600px) {
   .map__title {
