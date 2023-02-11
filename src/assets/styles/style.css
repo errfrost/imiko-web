@@ -519,6 +519,12 @@ body {
     width: 327px;
   }
 }
+.apps__item__screen:hover {
+  background-color: #E3FD52;
+}
+.apps__item__screen:hover p {
+  color: #111111;
+}
 .apps__item__screen {
   display: flex;
   background-color: #111111;
@@ -527,18 +533,152 @@ body {
   .apps__item__screen {
     width: 508px;
     height: 286px;
+    padding: 0 32px;
+  }
+  .apps__item__screen-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 168px;
+    padding: 32px 0;
+  }
+  .apps__item__screen-right {
+    width: 276px;
+  }
+  .apps__item__screen-icon {
+    width: 69px;
+    height: 69px;
+  }
+  .apps__item__screen-icon img {
+    width: 69px;
+    height: 69px;
+  }
+  .apps__item__screen-title {
+    font-family: Gilroy-Bold;
+    color: #E3FD52;
+    font-size: 2.4rem;
+    line-height: 24px;
+    white-space: nowrap;
+  }
+  .apps__item__screen-frontimg {
+    width: 199px;
+    height: 254px;
+    background-position: center bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    top: -222px;
+    left: 77px;
+    z-index: 1;
+  }
+  .apps__item__screen-backimg {
+    width: 169px;
+    height: 254px;
+    position: relative;
+    top: 0px;
+    left: 0px;
   }
 }
 @media (max-width: 1059px) {
   .apps__item__screen {
     width: 516px;
     height: 291px;
+    padding: 0 32px;
+  }
+  .apps__item__screen-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 168px;
+    padding: 32px 0;
+  }
+  .apps__item__screen-right {
+    width: 276px;
+  }
+  .apps__item__screen-icon {
+    width: 69px;
+    height: 69px;
+  }
+  .apps__item__screen-icon img {
+    width: 69px;
+    height: 69px;
+  }
+  .apps__item__screen-title {
+    font-family: Gilroy-Bold;
+    color: #E3FD52;
+    font-size: 2.4rem;
+    line-height: 24px;
+    white-space: nowrap;
+  }
+  .apps__item__screen-frontimg {
+    width: 199px;
+    height: 254px;
+    background-position: center bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    top: -222px;
+    left: 77px;
+    z-index: 1;
+  }
+  .apps__item__screen-backimg {
+    width: 169px;
+    height: 254px;
+    position: relative;
+    top: 0px;
+    left: 0px;
   }
 }
 @media (max-width: 743px) {
   .apps__item__screen {
     width: 327px;
     height: 184px;
+    padding: 0 20px;
+  }
+  .apps__item__screen-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 112px;
+    padding: 18px 0;
+  }
+  .apps__item__screen-right {
+    width: 175px;
+  }
+  .apps__item__screen-icon {
+    width: 44px;
+    height: 44px;
+  }
+  .apps__item__screen-icon img {
+    width: 44px;
+    height: 44px;
+  }
+  .apps__item__screen-title {
+    font-family: Gilroy-Bold;
+    color: #E3FD52;
+    font-size: 1.6rem;
+    line-height: 16px;
+    white-space: nowrap;
+  }
+  .apps__item__screen-frontimg {
+    width: 126px;
+    height: 254px;
+    background-position: center bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    top: -234px;
+    left: 50px;
+    z-index: 1;
+  }
+  .apps__item__screen-backimg {
+    width: 107px;
+    height: 161px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 0px;
+    left: 0px;
   }
 }
 .apps__title {
@@ -662,6 +802,49 @@ body {
   #screen3 {
     width: 327px;
   }
+}
+
+@media (min-width: 1060px) {
+  .app-screen {
+    width: 69px;
+    height: 69px;
+  }
+}
+@media (max-width: 1059px) {
+  .app-screen {
+    width: 69px;
+    height: 69px;
+  }
+}
+@media (max-width: 743px) {
+  .app-screen {
+    width: 44px;
+    height: 44px;
+  }
+}
+
+.frontimg1 {
+  background-image: url("../images/hd/app-hd-top.png");
+}
+
+.backimg1 {
+  background-image: url("../images/hd/app-hd-bottom.png");
+}
+
+.frontimg2 {
+  background-image: url("../images/pdf/app-pdf-top.png");
+}
+
+.backimg2 {
+  background-image: url("../images/pdf/app-pdf-bottom.png");
+}
+
+.frontimg3 {
+  background-image: url("../images/fax/app-fax-top.png");
+}
+
+.backimg3 {
+  background-image: url("../images/fax/app-fax-bottom.png");
 }
 
 .wrapper__offer {
