@@ -14,6 +14,8 @@
 }
 
 .team {
+  background-color: $color_white;
+
   &__header {
     display: flex;
     @include media-laptop {

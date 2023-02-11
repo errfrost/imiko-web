@@ -81,6 +81,7 @@ body {
   font-size: 1.6rem;
   color: #000000;
   margin: 0px;
+  background-color: #111111;
 }
 
 .wrapper {
@@ -89,16 +90,19 @@ body {
 @media (min-width: 1060px) {
   .wrapper {
     max-width: 1040px;
+    min-width: 1040px;
   }
 }
 @media (max-width: 1059px) {
   .wrapper {
     max-width: 696px;
+    min-width: 696px;
   }
 }
 @media (max-width: 743px) {
   .wrapper {
     max-width: 327px;
+    min-width: 327px;
   }
 }
 .wrapper__header {
@@ -1076,6 +1080,9 @@ body {
   }
 }
 
+.team {
+  background-color: #FFFFFF;
+}
 .team__header {
   display: flex;
 }
@@ -1450,6 +1457,7 @@ body {
 }
 
 .contact {
+  background-color: #FFFFFF;
   padding-top: 160px;
 }
 @media (min-width: 1060px) {
