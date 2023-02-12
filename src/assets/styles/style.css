@@ -1641,7 +1641,6 @@ body {
 
 .contact {
   background-color: #FFFFFF;
-  padding-top: 160px;
 }
 @media (min-width: 1060px) {
   .contact {
@@ -1664,7 +1663,6 @@ body {
   font-size: 4.8rem;
   font-weight: 700;
   line-height: 48px;
-  letter-spacing: 0.5px;
   text-align: left;
 }
 .contact__details {
@@ -1914,6 +1912,386 @@ body {
 }
 .footer a {
   color: #FFFFFF;
+}
+
+.wrapper__contact {
+  display: flex;
+  justify-content: flex-start;
+  gap: 24px;
+}
+@media (min-width: 1060px) {
+  .wrapper__contact {
+    flex-direction: row;
+    height: 586px;
+  }
+}
+@media (max-width: 1059px) {
+  .wrapper__contact {
+    flex-direction: column;
+    height: 826px;
+  }
+}
+@media (max-width: 743px) {
+  .wrapper__contact {
+    flex-direction: column;
+    height: 818px;
+  }
+}
+
+.contact-page {
+  background-color: #111111;
+  color: #FFFFFF;
+}
+@media (min-width: 1060px) {
+  .contact-page {
+    padding-top: 121px;
+  }
+}
+@media (max-width: 1059px) {
+  .contact-page {
+    padding-top: 121px;
+  }
+}
+@media (max-width: 743px) {
+  .contact-page {
+    padding-top: 95px;
+  }
+}
+@media (min-width: 1060px) {
+  .contact-page__contact {
+    width: 508px;
+  }
+}
+@media (max-width: 1059px) {
+  .contact-page__contact {
+    width: 696px;
+  }
+}
+@media (max-width: 743px) {
+  .contact-page__contact {
+    width: 326px;
+  }
+}
+.contact-page__form {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 1060px) {
+  .contact-page__form {
+    width: 508px;
+    padding-top: 20px;
+  }
+}
+@media (max-width: 1059px) {
+  .contact-page__form {
+    width: 696px;
+    padding-top: 68px;
+  }
+}
+@media (max-width: 743px) {
+  .contact-page__form {
+    width: 326px;
+    padding-top: 30px;
+  }
+}
+.contact-page__title {
+  font-family: Gilroy-Bold;
+  font-weight: 700;
+  text-align: left;
+}
+@media (min-width: 1060px) {
+  .contact-page__title {
+    width: 508px;
+    font-size: 6.4rem;
+    line-height: 64px;
+  }
+}
+@media (max-width: 1059px) {
+  .contact-page__title {
+    width: 508px;
+    font-size: 6.4rem;
+    line-height: 64px;
+  }
+}
+@media (max-width: 743px) {
+  .contact-page__title {
+    width: 327px;
+    font-size: 4.8rem;
+    line-height: 48px;
+  }
+}
+.contact-page__details {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (min-width: 1060px) {
+  .contact-page__details {
+    width: 490px;
+    padding-top: 45px;
+    gap: 36px;
+    row-gap: 19px;
+  }
+}
+@media (max-width: 1059px) {
+  .contact-page__details {
+    width: 696px;
+    padding-top: 45px;
+    gap: 69px;
+  }
+}
+@media (max-width: 743px) {
+  .contact-page__details {
+    width: 327px;
+    padding-top: 22px;
+    column-gap: 66px;
+    row-gap: 23px;
+  }
+}
+.contact-page__text {
+  line-height: 22.4px;
+  padding-top: 16px;
+}
+.contact-page__text a {
+  white-space: nowrap;
+  color: #FFFFFF;
+}
+@media (min-width: 1060px) {
+  .contact-page__text-laptop {
+    display: block;
+  }
+}
+@media (max-width: 1059px) {
+  .contact-page__text-laptop {
+    display: block;
+  }
+}
+@media (max-width: 743px) {
+  .contact-page__text-laptop {
+    display: none;
+  }
+}
+@media (min-width: 1060px) {
+  .contact-page__text-mobile {
+    display: none;
+  }
+}
+@media (max-width: 1059px) {
+  .contact-page__text-mobile {
+    display: none;
+  }
+}
+@media (max-width: 743px) {
+  .contact-page__text-mobile {
+    display: block;
+  }
+}
+.contact-page__mail {
+  font-size: 1.8rem;
+}
+.contact-page__text-24 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 33.6px;
+}
+
+.group {
+  position: relative;
+  padding-bottom: 33px;
+  height: 73px;
+}
+
+input {
+  font-size: 16px;
+  padding: 13px 10px 7px 20px;
+  display: block;
+  border: none;
+  border-bottom: 1px solid #757575;
+  color: #FFFFFF;
+  background: #111111;
+}
+@media (min-width: 1060px) {
+  input {
+    width: 509px;
+  }
+}
+@media (max-width: 1059px) {
+  input {
+    width: 509px;
+  }
+}
+@media (max-width: 743px) {
+  input {
+    width: 327px;
+  }
+}
+
+input:focus {
+  outline: none;
+}
+
+/* textarea ======================================= */
+textarea {
+  font-size: 16px;
+  padding: 13px 10px 7px 20px;
+  display: block;
+  resize: none;
+  border: none;
+  border-bottom: 1px solid #757575;
+  color: #FFFFFF;
+  background: #111111;
+}
+@media (min-width: 1060px) {
+  textarea {
+    width: 509px;
+    height: 84px;
+  }
+}
+@media (max-width: 1059px) {
+  textarea {
+    width: 509px;
+    height: 84px;
+  }
+}
+@media (max-width: 743px) {
+  textarea {
+    width: 327px;
+    height: 84px;
+  }
+}
+
+textarea:focus {
+  outline: none;
+}
+
+/* LABEL ======================================= */
+label {
+  color: #999;
+  font-size: 18px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 20px;
+  top: 4px;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+/* active state */
+input:focus ~ label,
+input:valid ~ label,
+textarea:focus ~ label {
+  top: -3px;
+  font-size: 11px;
+  color: #E3FD52;
+}
+
+/* BOTTOM BARS ================================= */
+.bar {
+  position: relative;
+  top: 1px;
+  display: block;
+}
+@media (min-width: 1060px) {
+  .bar {
+    width: 509px;
+  }
+}
+@media (max-width: 1059px) {
+  .bar {
+    width: 509px;
+  }
+}
+@media (max-width: 743px) {
+  .bar {
+    width: 327px;
+  }
+}
+
+.bar:before,
+.bar:after {
+  content: "";
+  height: 2px;
+  width: 0;
+  bottom: 1px;
+  position: absolute;
+  background: #E3FD52;
+}
+
+.bar:before {
+  left: 50%;
+}
+
+.bar:after {
+  right: 50%;
+}
+
+/* active state */
+input:focus ~ .bar:before,
+input:focus ~ .bar:after,
+textarea:focus ~ .bar:before,
+textarea:focus ~ .bar:after {
+  width: 50%;
+}
+
+/* HIGHLIGHTER ================================== */
+.highlight {
+  position: absolute;
+  height: 60%;
+  width: 100px;
+  top: 25%;
+  left: 0;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+/* active state */
+input:focus ~ .highlight,
+textarea:focus ~ .highlight {
+  -webkit-animation: inputHighlighter 0.3s ease;
+  -moz-animation: inputHighlighter 0.3s ease;
+  animation: inputHighlighter 0.3s ease;
+}
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+  from {
+    background: #111111;
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
+@-moz-keyframes inputHighlighter {
+  from {
+    background: #111111;
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
+@keyframes inputHighlighter {
+  from {
+    background: #111111;
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
+.button__contact {
+  margin-top: 47px;
+  width: 149px;
+  color: #111111;
+  background: #E3FD52;
+}
+
+.button__contact:hover {
+  background: #111111;
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
 }
 
 /*# sourceMappingURL=style.css.map */
