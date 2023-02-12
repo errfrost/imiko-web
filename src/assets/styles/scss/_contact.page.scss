@@ -1,0 +1,324 @@
+.wrapper__contact {
+  display: flex;
+  justify-content: flex-start;
+  @include media-laptop {
+    flex-direction: row;
+    height: 586px;
+  }
+  @include media-tablet {
+    flex-direction: column;
+    height: 826px;
+  }
+  @include media-mobile {
+    flex-direction: column;
+    height: 818px;
+  }
+  gap: 24px;
+}
+
+.contact-page {
+  background-color: $color_black;
+  color: $color_white;
+  @include media-laptop {
+    padding-top: 121px;
+  }
+  @include media-tablet {
+    padding-top: 121px;
+  }
+  @include media-mobile {
+    padding-top: 95px;
+  }
+
+  &__contact {
+    @include media-laptop {
+      width: 508px;
+    }
+    @include media-tablet {
+      width: 696px;
+    }
+    @include media-mobile {
+      width: 326px;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    @include media-laptop {
+      width: 508px;
+      padding-top: 20px;
+    }
+    @include media-tablet {
+      width: 696px;
+      padding-top: 68px;
+    }
+    @include media-mobile {
+      width: 326px;
+      padding-top: 30px;
+    }
+  }
+
+  &__title {
+    font-family: Gilroy-Bold;
+    font-weight: 700;
+    text-align: left;
+    @include media-laptop {
+      width: 508px;
+      font-size: 6.4rem;
+      line-height: 64px;
+    }
+    @include media-tablet {
+      width: 508px;
+      font-size: 6.4rem;
+      line-height: 64px;
+    }
+    @include media-mobile {
+      width: 327px;
+      font-size: 4.8rem;
+      line-height: 48px;
+    }
+  }
+
+  &__details {
+    display: flex;
+    flex-wrap: wrap;
+    @include media-laptop {
+      width: 490px;
+      padding-top: 45px;
+      gap: 36px;
+      row-gap: 19px;
+    }
+    @include media-tablet {
+      width: 696px;
+      padding-top: 45px;
+      gap: 69px;
+    }
+    @include media-mobile {
+      width: 327px;
+      padding-top: 22px;
+      column-gap: 66px;
+      row-gap: 23px;
+    }
+  }
+
+  &__text {
+    line-height: 22.4px;
+    padding-top: 16px;
+    a {
+      white-space: nowrap;
+      color: $color_white;
+    }
+
+    &-laptop {
+      @include media-laptop {
+        display: block;
+      }
+      @include media-tablet {
+        display: block;
+      }
+      @include media-mobile {
+        display: none;
+      }
+    }
+
+    &-mobile {
+      @include media-laptop {
+        display: none;
+      }
+      @include media-tablet {
+        display: none;
+      }
+      @include media-mobile {
+        display: block;
+      }
+    }
+  }
+
+  &__mail {
+    font-size: 1.8rem;
+  }
+
+  &__text-24 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 33.6px;
+  }
+}
+
+//Form===================
+.group {
+  position: relative;
+  padding-bottom: 33px;
+  height: 73px;
+}
+input {
+  font-size: 16px;
+  padding: 13px 10px 7px 20px;
+  display: block;
+  @include media-laptop {
+    width: 509px;
+  }
+  @include media-tablet {
+    width: 509px;
+  }
+  @include media-mobile {
+    width: 327px;
+  }
+  border: none;
+  border-bottom: 1px solid #757575;
+  color: $color_white;
+  background: $color_black;
+}
+input:focus {
+  outline: none;
+}
+
+/* textarea ======================================= */
+textarea {
+  font-size: 16px;
+  padding: 13px 10px 7px 20px;
+  display: block;
+  resize: none;
+  @include media-laptop {
+    width: 509px;
+    height: 84px;
+  }
+  @include media-tablet {
+    width: 509px;
+    height: 84px;
+  }
+  @include media-mobile {
+    width: 327px;
+    height: 84px;
+  }
+  border: none;
+  border-bottom: 1px solid #757575;
+  color: $color_white;
+  background: $color_black;
+}
+textarea:focus {
+  outline: none;
+}
+
+/* LABEL ======================================= */
+label {
+  color: #999;
+  font-size: 18px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 20px;
+  top: 4px;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+/* active state */
+input:focus ~ label,
+input:valid ~ label,
+textarea:focus ~ label {
+  top: -3px;
+  font-size: 11px;
+  color: $color_green;
+}
+
+/* BOTTOM BARS ================================= */
+.bar {
+  position: relative;
+  top: 1px;
+  display: block;
+  @include media-laptop {
+    width: 509px;
+  }
+  @include media-tablet {
+    width: 509px;
+  }
+  @include media-mobile {
+    width: 327px;
+  }
+}
+.bar:before,
+.bar:after {
+  content: "";
+  height: 2px;
+  width: 0;
+  bottom: 1px;
+  position: absolute;
+  background: $color_green;
+}
+.bar:before {
+  left: 50%;
+}
+.bar:after {
+  right: 50%;
+}
+
+/* active state */
+input:focus ~ .bar:before,
+input:focus ~ .bar:after,
+textarea:focus ~ .bar:before,
+textarea:focus ~ .bar:after {
+  width: 50%;
+}
+
+/* HIGHLIGHTER ================================== */
+.highlight {
+  position: absolute;
+  height: 60%;
+  width: 100px;
+  top: 25%;
+  left: 0;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+/* active state */
+input:focus ~ .highlight,
+textarea:focus ~ .highlight {
+  -webkit-animation: inputHighlighter 0.3s ease;
+  -moz-animation: inputHighlighter 0.3s ease;
+  animation: inputHighlighter 0.3s ease;
+}
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+  from {
+    background: $color_black;
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
+@-moz-keyframes inputHighlighter {
+  from {
+    background: $color_black;
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
+@keyframes inputHighlighter {
+  from {
+    background: $color_black;
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
+
+.button__contact {
+  margin-top: 47px;
+  width: 149px;
+  color: $color_black;
+  background: $color_green;
+}
+
+.button__contact:hover {
+  background: $color_black;
+  color: $color_white;
+  border: 1px solid $color_white;
+}
