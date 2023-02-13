@@ -2119,9 +2119,13 @@ body {
   position: relative;
   padding-bottom: 33px;
   height: 73px;
+  /* textarea ======================================= */
+  /* LABEL ======================================= */
+  /* active state */
+  /* active state */
+  /* active state */
 }
-
-input {
+.group input {
   font-size: 16px;
   padding: 13px 10px 7px 20px;
   display: block;
@@ -2131,27 +2135,24 @@ input {
   background: #111111;
 }
 @media (min-width: 1060px) {
-  input {
+  .group input {
     width: 509px;
   }
 }
 @media (max-width: 1059px) {
-  input {
+  .group input {
     width: 509px;
   }
 }
 @media (max-width: 743px) {
-  input {
+  .group input {
     width: 327px;
   }
 }
-
-input:focus {
+.group input:focus {
   outline: none;
 }
-
-/* textarea ======================================= */
-textarea {
+.group textarea {
   font-size: 16px;
   padding: 13px 10px 7px 20px;
   display: block;
@@ -2162,30 +2163,27 @@ textarea {
   background: #111111;
 }
 @media (min-width: 1060px) {
-  textarea {
+  .group textarea {
     width: 509px;
     height: 84px;
   }
 }
 @media (max-width: 1059px) {
-  textarea {
+  .group textarea {
     width: 509px;
     height: 84px;
   }
 }
 @media (max-width: 743px) {
-  textarea {
+  .group textarea {
     width: 327px;
     height: 84px;
   }
 }
-
-textarea:focus {
+.group textarea:focus {
   outline: none;
 }
-
-/* LABEL ======================================= */
-label {
+.group label {
   color: #999;
   font-size: 18px;
   font-weight: normal;
@@ -2197,14 +2195,24 @@ label {
   -moz-transition: 0.2s ease all;
   -webkit-transition: 0.2s ease all;
 }
-
-/* active state */
-input:focus ~ label,
-input:valid ~ label,
-textarea:focus ~ label {
+.group input:focus ~ label,
+.group input:valid ~ label,
+.group textarea:focus ~ label {
   top: -3px;
   font-size: 11px;
   color: #E3FD52;
+}
+.group input:focus ~ .bar:before,
+.group input:focus ~ .bar:after,
+.group textarea:focus ~ .bar:before,
+.group textarea:focus ~ .bar:after {
+  width: 50%;
+}
+.group input:focus ~ .highlight,
+.group textarea:focus ~ .highlight {
+  -webkit-animation: inputHighlighter 0.3s ease;
+  -moz-animation: inputHighlighter 0.3s ease;
+  animation: inputHighlighter 0.3s ease;
 }
 
 /* BOTTOM BARS ================================= */
@@ -2247,14 +2255,6 @@ textarea:focus ~ label {
   right: 50%;
 }
 
-/* active state */
-input:focus ~ .bar:before,
-input:focus ~ .bar:after,
-textarea:focus ~ .bar:before,
-textarea:focus ~ .bar:after {
-  width: 50%;
-}
-
 /* HIGHLIGHTER ================================== */
 .highlight {
   position: absolute;
@@ -2264,14 +2264,6 @@ textarea:focus ~ .bar:after {
   left: 0;
   pointer-events: none;
   opacity: 0.5;
-}
-
-/* active state */
-input:focus ~ .highlight,
-textarea:focus ~ .highlight {
-  -webkit-animation: inputHighlighter 0.3s ease;
-  -moz-animation: inputHighlighter 0.3s ease;
-  animation: inputHighlighter 0.3s ease;
 }
 
 /* ANIMATIONS ================ */
@@ -2313,6 +2305,140 @@ textarea:focus ~ .highlight {
   background: #111111;
   color: #FFFFFF;
   border: 1px solid #FFFFFF;
+}
+
+.custom-select {
+  width: 508px;
+  padding-bottom: 33px;
+  position: relative;
+  /* FAKE SELECT */
+}
+.custom-select details {
+  position: relative;
+  width: 508px;
+  margin-right: 1rem;
+}
+.custom-select details[open] {
+  z-index: 1;
+}
+.custom-select summary {
+  padding: 10px 10px 10px 20px;
+  border-radius: 5px;
+  background-color: #111111;
+  color: #FFFFFF;
+  list-style: none;
+}
+@media (min-width: 1060px) {
+  .custom-select summary {
+    width: 488px;
+  }
+}
+@media (max-width: 1059px) {
+  .custom-select summary {
+    width: 488px;
+  }
+}
+@media (max-width: 743px) {
+  .custom-select summary {
+    width: 488px;
+  }
+}
+.custom-select summary::-webkit-details-marker {
+  display: none;
+}
+.custom-select details[open] summary:before {
+  content: "";
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  background: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.custom-select summary:after {
+  content: "";
+  display: inline-block;
+  float: right;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-bottom: 1px solid currentColor;
+  border-left: 1px solid currentColor;
+  border-bottom-left-radius: 2px;
+  transform: rotate(45deg) translate(50%, 0%);
+  transform-origin: center center;
+  transition: transform ease-in-out 100ms;
+}
+.custom-select summary:focus {
+  outline: none;
+}
+.custom-select details[open] summary:after {
+  transform: rotate(-45deg) translate(0%, 0%);
+}
+.custom-select ul {
+  width: 508px;
+  background: #111111;
+  position: absolute;
+  top: 53px;
+  padding: 10px 20px;
+  margin: 0;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: 1px solid #727272;
+  color: #757575;
+  z-index: 1;
+}
+.custom-select li {
+  margin: 0;
+  padding: 15px 0;
+}
+.custom-select li:hover {
+  color: #E3FD52;
+}
+.custom-select li:first-child {
+  padding-top: 0;
+}
+.custom-select li:last-child {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+.custom-select summary.radios {
+  counter-reset: radios;
+}
+.custom-select summary.radios:before {
+  content: var(--selection);
+}
+.custom-select input[type=radio] {
+  counter-increment: radios;
+  appearance: none;
+  display: none;
+}
+.custom-select input[type=radio]:checked {
+  display: inline;
+  --display: block;
+  color: #FFFFFF;
+  font-size: 1.6rem;
+}
+.custom-select input[type=radio]:after {
+  content: attr(title);
+  display: inline;
+  font-size: 1.6rem;
+}
+.custom-select ul.list {
+  counter-reset: labels;
+}
+.custom-select label {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.custom-select label span {
+  --display: none;
+  display: var(--display);
+  width: 1rem;
+  height: 1rem;
+  border: 1px solid #727272;
+  border-radius: 3px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -69,11 +69,40 @@
               <label>E-mail</label>
             </div>
 
-            <div class="group">      
-              <input type="text" required>
+            <div class="">      
+              <!-- <input type="text" required>
               <span class="highlight"></span>
               <span class="bar"></span>
-              <label>Vacancy</label>
+              <label>Vacancy</label> -->
+              <details class="custom-select">
+                <summary class="radios">
+                  <input type="radio" name="item" id="default" title="Vacancy" checked>
+                  <input type="radio" name="item" id="item1" title="QA Engineer">
+                  <input type="radio" name="item" id="item2" title="iOS Developer">
+                  <input type="radio" name="item" id="item3" title="Android Developer">
+                  <input type="radio" name="item" id="item4" title="UX/UI Designer">
+                  <input type="radio" name="item" id="item5" title="Motion Designer">
+                </summary>
+                <span class="bar"></span>
+                <ul class="list">
+                  <li>
+                    <label for="item1">QA Engineer</label>
+                  </li>
+                  <li>
+                    <label for="item2">iOS Developer</label>
+                  </li>
+                  <li>
+                    <label for="item3">Android Developer</label>
+                  </li>
+                  <li>
+                    <label for="item4">UX/UI Designer</label>
+                  </li>
+                  <li>
+                    <label for="item5">Motion Designer</label>
+                  </li>
+                </ul>
+              </details>
+
             </div>
 
             <div class="group">      
