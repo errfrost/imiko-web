@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <link rel="stylesheet" href="./assets/styles/style.css">
+  <script src="index.js" type="module"></script>
   <meta name="viewport" content="width=335, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -69,11 +70,41 @@
               <label>E-mail</label>
             </div>
 
-            <div class="group">      
-              <input type="text" required>
-              <span class="highlight"></span>
-              <span class="bar"></span>
-              <label>Vacancy</label>
+            <div class="">      
+              <div class="group">
+                <input type="text" id="vacancy" required onkeypress="return false;" autocomplete="off">
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>Vacancy</label>
+              </div>
+              <details class="custom-select">
+                <summary class="radios" id="vacancy-box">
+                  <input type="radio" name="vacancy-item" id="default" title="Vacancy" checked>
+                  <input type="radio" name="vacancy-item" id="item1" title="QA Engineer">
+                  <input type="radio" name="vacancy-item" id="item2" title="iOS Developer">
+                  <input type="radio" name="vacancy-item" id="item3" title="Android Developer">
+                  <input type="radio" name="vacancy-item" id="item4" title="UX/UI Designer">
+                  <input type="radio" name="vacancy-item" id="item5" title="Motion Designer">
+                </summary>
+                <ul class="list">
+                  <li>
+                    <label for="item1">QA Engineer</label>
+                  </li>
+                  <li>
+                    <label for="item2">iOS Developer</label>
+                  </li>
+                  <li>
+                    <label for="item3">Android Developer</label>
+                  </li>
+                  <li>
+                    <label for="item4">UX/UI Designer</label>
+                  </li>
+                  <li>
+                    <label for="item5">Motion Designer</label>
+                  </li>
+                </ul>
+              </details>
+
             </div>
 
             <div class="group">      
