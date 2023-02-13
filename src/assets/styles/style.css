@@ -2005,7 +2005,7 @@ body {
 }
 @media (max-width: 1059px) {
   .contact-page__form {
-    width: 696px;
+    width: 508px;
     padding-top: 68px;
   }
 }
@@ -2132,6 +2132,7 @@ body {
   display: block;
   border: none;
   border-bottom: 1px solid #757575;
+  border-radius: 0px;
   color: #FFFFFF;
   background: #111111;
 }
@@ -2357,7 +2358,7 @@ body {
 }
 @media (max-width: 743px) {
   .custom-select summary {
-    width: 488px;
+    width: 300px;
   }
 }
 .custom-select summary::-webkit-details-marker {
@@ -2397,7 +2398,7 @@ body {
   background: #111111;
   position: absolute;
   top: 53px;
-  padding: 10px 20px;
+  padding: 0;
   margin: 0;
   box-sizing: border-box;
   border-radius: 10px;
@@ -2407,16 +2408,13 @@ body {
 }
 .custom-select li {
   margin: 0;
-  padding: 15px 0;
+  padding: 15px 20px;
 }
 .custom-select li:hover {
   color: #E3FD52;
-}
-.custom-select li:first-child {
-  padding-top: 0;
+  background-color: rgba(227, 253, 82, 0.1);
 }
 .custom-select li:last-child {
-  padding-bottom: 0;
   border-bottom: none;
 }
 .custom-select summary.radios {
@@ -2456,6 +2454,20 @@ body {
   height: 1rem;
   border: 1px solid #727272;
   border-radius: 3px;
+}
+
+.input-icon {
+  position: absolute;
+  width: 18px;
+  height: 19px;
+  top: 5px;
+  right: 15px;
+  color: #727272;
+  font-size: 2.4rem;
+}
+
+.rotate {
+  transform: rotate(180deg) translate(0%, 0%);
 }
 
 /*# sourceMappingURL=style.css.map */
