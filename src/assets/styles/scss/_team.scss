@@ -121,18 +121,20 @@
     @include media-laptop {
       width: 1040px;
       height: 508px;
+      column-gap: 24px;
     }
     @include media-tablet {
       width: 696px;
       height: 508px;
+      column-gap: 24px;
     }
     @include media-mobile {
-      width: 328px;
+      width: 327px;
       height: 508px;
+      column-gap: 23px;
     }
     flex-wrap: wrap;
     margin-top: -36px;
-    column-gap: 24px;
   }
 
   &__member {
